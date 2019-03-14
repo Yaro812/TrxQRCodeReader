@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CEB559DD223AD04000C97AA4 /* TrxQRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB559DB223AD04000C97AA4 /* TrxQRCodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB559E5223AD07F00C97AA4 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB559E4223AD07F00C97AA4 /* QRCodeReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEB559D8223AD04000C97AA4 /* TrxQRCodeReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrxQRCodeReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB559DB223AD04000C97AA4 /* TrxQRCodeReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrxQRCodeReader.h; sourceTree = "<group>"; };
 		CEB559DC223AD04000C97AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB559E4223AD07F00C97AA4 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		CEB559DA223AD04000C97AA4 /* TrxQRCodeReader */ = {
 			isa = PBXGroup;
 			children = (
+				CEB559E3223AD04B00C97AA4 /* Classes */,
 				CEB559DB223AD04000C97AA4 /* TrxQRCodeReader.h */,
 				CEB559DC223AD04000C97AA4 /* Info.plist */,
 			);
 			path = TrxQRCodeReader;
+			sourceTree = "<group>";
+		};
+		CEB559E3223AD04B00C97AA4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CEB559E4223AD07F00C97AA4 /* QRCodeReader.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					CEB559D7223AD04000C97AA4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB559E5223AD07F00C97AA4 /* QRCodeReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		CEB559E1223AD04000C97AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = my.company.TrxQRCodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		CEB559E2223AD04000C97AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
